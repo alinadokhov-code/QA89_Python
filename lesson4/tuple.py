@@ -56,3 +56,19 @@ original_tuple = (3,1,4,5,9,2,6,5,5,3)
 sorted_tuple = tuple(sorted(original_tuple))
 print('original: ', original_tuple)
 print('sorted: ', sorted_tuple)
+
+sub_tuple = original_tuple[3:7]
+print(sub_tuple)
+
+my_tuple = list(original_tuple)
+print(my_tuple)
+
+my_string = ''.join(map(str,original_tuple))
+print(my_string)
+
+my_tuple = (1,2,3,4,5)
+my_list = list(my_tuple)
+my_list[2] = 10
+updated_tuple = tuple(my_list)
+print("original_tuple: ", my_tuple)
+print("updated_tuple: ", updated_tuple)
