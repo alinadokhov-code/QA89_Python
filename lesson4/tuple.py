@@ -51,3 +51,8 @@ print(len(my_tuple1))
 print(sum(my_tuple1))
 #print(max(my_tuple1))
 #print(min(my_tuple1))
+
+original_tuple = (3,1,4,5,9,2,6,5,5,3)
+sorted_tuple = tuple(sorted(original_tuple))
+print('original: ', original_tuple)
+print('sorted: ', sorted_tuple)
