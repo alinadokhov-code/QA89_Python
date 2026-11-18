@@ -1,12 +1,13 @@
+from operator import truediv
+
 age = 25
 name = 'Kristina'
-
 #int - целые числа
 #float -дробные числа
 #str- строки
 #bool - логический
 
-said = "'She said 'Hello'"
+said = "She said 'Hello'"
 print(said)
 
 my_string = '''This is a multy-line string.
@@ -27,7 +28,7 @@ print(type(s4))
 
 s5 = 'Zeleno'
 s6 = 'glazka'
-s7 =  s5 + s6
+s7 =  s6 + s5
 print(s7)
 
 #join()
@@ -37,7 +38,8 @@ print(res)
 
 st = "ab" * 7
 print(st)
-st = 35 * '*'
+
+st = 35 * "*"
 print(st)
 
 s1 = 'Kris Tomash'
@@ -48,19 +50,23 @@ if s2 in s1:
 else:
     print("User Kristina is not in a DB")
 
-    st = 'a'
-    if st == 'a' or st == 'b' or st == 'c' or st == 'd':
-        print("Yes")
+st = 'a'
+if st == 'a' or st == 'b' or st == 'c' or st == 'd':
+    print("Yes")
 
-    if st in 'abcd':
-        print("Yes")
+if st in 'abcd':
+    print("Yes")
 
-# ********************************
-# len()
+#********************************
+#len()
 ln = len('Zelenoglazka')
 print(ln)
+
 s1 = 'Zelenoglazka'
 print(len(s1))
+
+ln = len(s5+s7)
+print(ln)
 
 #**********************************
 #0 1 2 3 4 5
@@ -74,24 +80,49 @@ print(st[3])
 print(st[4])
 print(st[5])
 
+#-6 -5 -4 -3 -2 -1
+#P  Y  T  H  O  N
+st = 'Python'
+
+print(st[-1])
+print(st[-2])
+print(st[-3])
+print(st[-6])
+
+#*********************************
+#my_string[start:end]
+#**********************************
+#0 1 2 3 4 5
+#P Y T H O N
+
 st = 'Python'
 
 print(st[0:3])
+
 print(st[2:5])
-print(st[4:6])
+
+print(st[6:4])
+print(st[:10])
+print("**********************")
 
 my_string = "Hello world"
 every_second_char = my_string[::2]
 print(every_second_char)
-
-reversed_string = my_string[::-1]
-print(reversed_string)
-
-from_second = my_string[1::2]
-print(from_second)from_second = my_string[1::2]
-print(from_second)from_second = my_string[1::2]
-print(from_second)
 from_second = my_string[1::2]
 print(from_second)
 my_substring = my_string[1:10:3]
 print(my_substring)
+
+reversed_string = my_string[::-3]#step -1
+print(reversed_string)
+
+
+
+
+
+
+
+
+
+
+
